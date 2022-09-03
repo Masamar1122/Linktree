@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Linktree</title>
+</head>
+<body>
+  <div class="container">
+    <div class="content">
+    <div class="profil">
+      <img src="https://raw.githubusercontent.com/Masamar1122/gambar/main/profil-linktree.jpg" alt="Erorr">
+    </div>
+    <div class="address">
+      <!--BITCOIN-->
+    <div class="copy-btc">
+      <img src="https://raw.githubusercontent.com/Masamar1122/gambar/main/BTC.png" alt="">
+     <input type="text" class="copy-btc-input" value="bc1q3qykqxnl7mdmjq96wgdlwv60na8p0q095lzvaj" readonly>
+     <button type="button" class="copy-btc-button">
+    <span class="material-icons"><i class="fa fa-copy"></i></span>
+  </button>
+</div>
+      <!--ETHEREUM-->
+    <div class="copy-eth">
+      <img src="https://raw.githubusercontent.com/Masamar1122/gambar/main/ETH.png" alt="">
+     <input type="text" class="copy-eth-input" value="0x1E55B0f3620c06E3493c2A47c6d3D855421c1583" readonly>
+     <button type="button" class="copy-eth-button">
+    <span class="material-icons"><i class="fa fa-copy"></i></span>
+  </button>
+</div>
+    </div>
+    <div class="link">
+    <a href="https://masamar-web.vercel.app" class="website"><i class="fa fa-globe"></i>Website</a>
+    <a href="https://github.com/Masamar1122" class="github"><i class="fa fa-github"></i>Github</a>
+    <a href="https://twitter.com/FSiuw" class="twitter"><i class="fa fa-twitter"></i>Twitter</a>
+    <a href="https://t.me/masamar1122" class="telegram"><i class="fa fa-telegram"></i>Telegram</a>
+    <a href="https://www.instagram.com/m.amar_r123" class="instagram"><i class="fa fa-instagram"></i>Instagram</a>
+    </div>
+    </div>
+  </div>
+  
+  <script type="text/javascript">
+  //BITCOIN
+   document.querySelectorAll(".copy-btc").forEach((copyLinkParent) => {
+  const inputField = copyLinkParent.querySelector(".copy-btc-input");
+  const copyButton = copyLinkParent.querySelector(".copy-btc-button");
+  const text = inputField.value;
+
+  inputField.addEventListener("focus", () => inputField.select());
+
+  copyButton.addEventListener("click", () => {
+    inputField.select();
+    navigator.clipboard.writeText(text);
+
+    inputField.value = "Copied!";
+    setTimeout(() => (inputField.value = text), 500);
+  });
+})
+  //ETHEREUM
+   document.querySelectorAll(".copy-eth").forEach((copyLinkParent) => {
+  const inputField = copyLinkParent.querySelector(".copy-eth-input");
+  const copyButton = copyLinkParent.querySelector(".copy-eth-button");
+  const text = inputField.value;
+  
+    inputField.addEventListener("focus", () => inputField.select());
+
+  copyButton.addEventListener("click", () => {
+    inputField.select();
+    navigator.clipboard.writeText(text);
+
+    inputField.value = "Copied!";
+    setTimeout(() => (inputField.value = text), 500);
+  });
+})
+  </script>
+  
+</body>
+</html>

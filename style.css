@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Eczar&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+body {
+  background-image: url(https://raw.githubusercontent.com/Masamar1122/gambar/main/bg-linktree.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+.container {
+  height: 100%;
+  width: 100%;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 80px 0;
+}
+.profil {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: cyan;
+  height: 152px;
+  width: 152px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 60px 0px Cyan;
+}
+.profil img {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+}
+.address {
+  margin-top: 30px;
+  padding-right: 100px;
+}
+
+.copy-btc img {
+  height: 50px;
+  margin-top: -8px;
+}
+
+/*BITCOIN*/
+.copy-btc {
+  height: 36px;
+  display: flex;
+  width: 250px;
+  margin-bottom: 10px;
+}
+.copy-btc-input {
+  background-color: transparent;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+  flex-grow: 1;
+  padding: 0 8px;
+  font-size: 16px;
+  color: #fff;
+  border: 1px solid cyan;
+  border-right: none;
+  outline: none;
+  font-family: 'Eczar', serif;
+}
+.copy-btc-button {
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  color: #333333;
+  outline: none;
+  border: 1px solid cyan;
+  cursor: pointer;
+}
+.fa-copy {
+  color: #fff;
+  font-size: 20px;
+}
+.copy-eth img {
+  height: 50px;
+  margin-top: -8px;
+}
+
+/*ETHEREUM*/
+.copy-eth {
+  height: 36px;
+  display: flex;
+  width: 250px;
+  margin-bottom: 30px;
+}
+.copy-eth-input {
+  background-color: transparent;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+  flex-grow: 1;
+  padding: 0 8px;
+  font-size: 16px;
+  color: #fff;
+  border: 1px solid cyan;
+  border-right: none;
+  outline: none;
+  font-family: 'Eczar', serif;
+}
+.copy-eth-button {
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  outline: none;
+  border: 1px solid cyan;
+  cursor: pointer;
+}
+.link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.website {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #BDEDFF;
+  border: 1px solid cyan;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 23px;
+  width: 320px;
+  height: 40px;
+  margin-bottom: 15px;
+  font-family: 'VT323', monospace;
+}
+.website:hover {
+  width: 340px;
+  font-size: 25px;
+  transition: 0.4s;
+  box-shadow: 0px 0px 15px 1px cyan;
+}
+.fa-globe {
+  padding-right: 5px;
+  color: #ADDFFF;
+}
+.github {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #BDEDFF;
+  border: 1px solid cyan;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 23px;
+  width: 320px;
+  height: 40px;
+  margin-bottom: 15px;
+  font-family: 'VT323', monospace;
+}
+.github:hover {
+  width: 340px;
+  font-size: 25px;
+  transition: 0.4s;
+  box-shadow: 0px 0px 15px 1px cyan;
+}
+.fa-github {
+  padding-right: 5px;
+  color: black;
+}
+.twitter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #BDEDFF;
+  border: 1px solid cyan;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 23px;
+  width: 320px;
+  height: 40px;
+  margin-bottom: 15px;
+  font-family: 'VT323', monospace;
+}
+.twitter:hover {
+  width: 340px;
+  font-size: 25px;
+  transition: 0.4s;
+  box-shadow: 0px 0px 15px 1px cyan;
+}
+.fa-twitter {
+  padding-right: 5px;
+  color: #1E90FF;
+}
+.telegram {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #BDEDFF;
+  border: 1px solid cyan;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 23px;
+  width: 320px;
+  height: 40px;
+  margin-bottom: 15px;
+  font-family: 'VT323', monospace;
+}
+.telegram:hover {
+  width: 340px;
+  font-size: 25px;
+  transition: 0.4s;
+  box-shadow: 0px 0px 15px 1px cyan;
+}
+.fa-telegram {
+  padding-right: 5px;
+  color: #3090C7;
+}
+.instagram {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #BDEDFF;
+  border: 1px solid cyan;
+  border-radius: 20px;
+  font-size: 23px;
+  cursor: pointer;
+  width: 320px;
+  height: 40px;
+  font-family: 'VT323', monospace;
+}
+.instagram:hover {
+  width: 340px;
+  font-size: 25px;
+  transition: 0.4s;
+  box-shadow: 0px 0px 15px 1px cyan;
+}
+.fa-instagram {
+  padding-right: 5px;
+  color: #F6358A;
+}
+
